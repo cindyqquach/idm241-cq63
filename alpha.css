@@ -1,0 +1,74 @@
+:root {
+    --background-color: rgb(237, 237, 237); 
+    --text-color: #2b4899;
+    --text-color-text: black; 
+}
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    width: 100%; 
+    height: auto; 
+    background-color: var(--background-color);
+    color: var(--text-color); 
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width:0px) {
+body {
+    padding: 30px; 
+}
+h1 { 
+    font: bold 35px/40px 'Times New Roman', Times, serif; 
+    margin: 50px 0 10px; 
+}
+    
+h2 {
+    font: bold 28px/38px 'Times New Roman', Times, serif; 
+    margin: 20px 0; 
+}
+
+h3 {
+    font: bold 25px/35px 'Times New Roman', Times, serif; 
+    margin: 20px 0; 
+
+}
+p, li{
+    font: normal 20px/30px Helvetica, sans-serif;
+    line-break: auto;
+    color: var(--text-color-text); 
+}
+ul {
+    display: flex;
+    flex-flow: wrap column; 
+    justify-content: space-evenly;
+    margin: 0; 
+}
+
+img {
+    display: block;
+    border: solid 2px var(--text-color); 
+    width: 90%; 
+    margin: 10px; 
+    height: auto; 
+}}
+
+@media screen and (min-width:768px) { 
+h1 {
+    font: bold 60px/70px 'Times New Roman', Times, serif; 
+}
+h2 {
+font: bold 40px/50px 'Times New Roman', Times, serif; 
+}
+p, li{
+    font: normal 20px/30px Helvetica, sans-serif;
+}
+img {
+    width: 50%; 
+    height: auto;
+}}
+
+@media screen and (min-width:1340px) {
+*{
+    margin-left: 30px; 
+}
+}
