@@ -1,0 +1,124 @@
+:root {
+    --background-color: rgb(237, 237, 237); 
+    --text-color: #2b4899;
+    --text-color-text: black; 
+    --font-family: 'Times New Roman', Times, serif;
+}
+    
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--text-color); 
+    
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--text-color); 
+    font: normal 20px/30px Helvetica, sans-serif;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-color-text); 
+    transform-origin: bottom right; 
+    transition: transform 0.25s ease-out;
+  }
+.hover-underline-animation:hover {
+    cursor: pointer;
+    color: black; 
+  }
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.tab {
+    display: block; 
+}
+@media screen and (min-width:0px) {
+    /* .tab {
+        margin: 0 40px; 
+    } */
+    .build {
+        display: flex; 
+        flex-flow: column nowrap; 
+    }
+    a {
+        text-decoration: none;
+        display: block; 
+        margin: 10px 0; 
+    }
+    body {
+        padding: 20px; 
+        display: block;
+    }
+    h1 { 
+        font: bold 35px/40px 'Times New Roman', Times, serif; 
+        margin: 50px 0 10px; 
+    }
+        
+    h2 {
+        font: bold 28px/38px 'Times New Roman', Times, serif; 
+        margin: 20px 0; 
+    }
+    
+    h3 {
+        font: bold 25px/35px 'Times New Roman', Times, serif; 
+        margin: 20px 0; 
+    
+    }
+    p, li{
+        font: normal 20px/30px Helvetica, sans-serif;
+        line-break: auto;
+        color: var(--text-color-text); 
+    }
+    ul {
+        display: flex;
+        flex-flow: wrap column; 
+        justify-content: space-evenly;
+        margin: 0; 
+    }
+    
+    img {
+        display: block;
+        border: solid 2px var(--text-color); 
+        width: 90%; 
+        margin: 10px; 
+        height: auto; 
+    }}
+    
+@media screen and (min-width:768px) { 
+    .build {
+        display: flex; 
+        flex-flow: row nowrap; 
+    }
+    .tab {
+        margin: 0 auto; 
+    }
+    h1 {
+        font: bold 60px/70px 'Times New Roman', Times, serif; 
+    }
+    h2 {
+    font: bold 40px/50px 'Times New Roman', Times, serif; 
+    }
+    p, li{
+        font: normal 20px/30px Helvetica, sans-serif;
+    }
+    img {
+        width: 50%; 
+        height: auto;
+    }}
+    
+@media screen and (min-width:1340px) {
+    *{
+        margin-left: 30px; 
+    }
+    }
