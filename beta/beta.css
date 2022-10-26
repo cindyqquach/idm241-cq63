@@ -1,0 +1,99 @@
+
+:root {
+    --background-color: #F9DC4A; 
+    --text-color: black;
+    --text-color-text: black; 
+    --text-color-accent: #24579E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 10px; 
+    font-size: 100%;
+    width: 100%; 
+    height: auto; 
+    background-color: var(--background-color);
+    color: var(--text-color); 
+    scroll-behavior: smooth;
+}
+
+.list {
+    list-style: circle;
+    margin-left: 25px; 
+}
+@media screen and (min-width:0px) {
+body {
+    padding: 30px; 
+}
+h1 { 
+    font: bold 30px/40px Helvetica, sans-serif; 
+    margin: 50px 0 10px; 
+}
+    
+h2 {
+    font: bold 25px/38px Helvetica, sans-serif;
+    margin: 20px 0; 
+}
+.italic {
+    font-style: italic;
+}
+h3 {
+    font: bold 20px/25px Helvetica, sans-serif;
+    margin: 10px 0; 
+    color: var(--text-color-accent); 
+
+}
+p, li{
+    font: normal 16px/28px Helvetica, sans-serif;
+    line-break: auto;
+    color: var(--text-color-text); 
+}
+ul {
+    display: flex;
+    flex-flow: wrap column; 
+    justify-content: space-evenly;
+    margin: 0; 
+}
+
+span {
+    font-weight: bold;
+    color: var(--text-color)
+}
+img {
+    display: block;
+    /* border: solid 2px var(--text-color);  */
+    width: 90%; 
+    margin: 10px; 
+    height: auto; 
+}}
+
+@media screen and (min-width:768px) { 
+body {
+    margin: 30px; 
+}
+h1 {
+    font: bold 60px/70px Helvetica, sans-serif;
+}
+h2 {
+font: bold 40px/50px Helvetica, sans-serif;
+}
+h3 {
+    font: bold 30px/40px Helvetica, sans-serif;
+    }
+p, li{
+    font: normal 20px/30px Helvetica, sans-serif;
+}
+img {
+    width: 50%; 
+    height: auto;
+}
+.photos {
+    text-align: center;
+}
+}
+
+@media screen and (min-width:1340px) {
+body {
+    margin: 30px 150px; 
+}
+}
