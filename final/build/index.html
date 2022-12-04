@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IDM241 - Final</title>
+</head>
+<body>
+<!--Mobile nav-->
+<nav class="mobile-nav">
+    <div role="img" class="mobile-nav__button" id="button-container">
+        <!-- Menu icon -->
+        <img id="open-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--closed" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPUAAADNCAMAAABXRsaXAAAAaVBMVEUAAAD////6+vrw8PAfHx8cHBz19fXn5+czMzNSUlLz8/MRERE2NjYiIiJsbGzGxsZ1dXW/v7/W1tZ/f3/Jyck1NTWurq5zc3NoaGgtLS21tbVfX1/j4+M9PT3BwcFaWlpOTk6Hh4eVlZXOBACRAAAD7UlEQVR4nO2d63aqMBBGC2i4KCJgsfTUS33/h+zpsoYkBPWHZNaab/YTfHvVJiGZTN4iRN6oA5Ag1gZFwoPiWeuk2/erNy6s+n2XPLSuc+qcM5DXd62rjDrgTPTHSWu1oQ43Ix/Kb50uqZPNyjL1WTfUsWanGVun1JkCkLrWakEdKQBL5VhzHsgGPmzrijpPII6WNdd52iUzrWvqNMGoDWuOy1A/+WCdUGcJSKKtO+ooAem09ZY6SkD22hplBP+l19Z8NhEes7pZK+okQSn+rJGG8Osgjve3VtD/19GaOkpA3rV1Sx0lIK22/qSOEpBPbY00nBXDN9c/6izBOBlfmjvqMMGozL2UA3WaQBysHST+m+FXGnuPFGPyap2d4RjhN76OHeuooI4UAH2QPZxzpexX41/R2DpSvH/kB6Nawzq1/6ZONiPfcTRhHTVcN8bzxvJ061KaPXXAGdg0jqWn8qq65Fm54EGZ5ZfjWHGyyi7mwJSc1BbiINY4iDUOYo2DWOMg1jiINQ5ijYNY4yDWOIg1DmKNg1jjINY4iDUOYo2DWOMg1jiINQ4T1tQlUy/jWeukbvOSuhrwZZR5W6cPrXcn6pwzcKruWu+4Fkuvd9PWnDsNbCesU96tkPydvr4Qb0BAdvqK36kjBSBzbzZxvAIwZmNbo1xP3VnWXOdpl7VpfaROEwyz0xfkrXOkNjFDpy/MbhKc198uW22NsEK5kWlr9itwA9BOX7fuT0hDuHT6ok4SEMxOXxn4fI25NkMaxId1OOY3F+j3NeZeCui+GcjktXd2hmOElcpoPxzz7APgnGvl7fSV8qlQ8FF6zzQj3s0Lp86vI8a1Coc7tQq/3hwXp6edY+mrQfo+9dQ5X0Z/auvHrw3+QV0m9jL8elJbiINY4yDWOIg1DmKNg1jjINY4iDUOYo2DWOMg1jiINQ5ijYNY4yDWOIg1DmKNg1jjINY4TFlTV0y9iKet4+Pl3JdLHpT9+VKP3UcVlRvqasAZ+LhfUdmcqQPOxHn6ndyYc6V0O/EmcsH76sc68Vl/UceaHc8NCIS7mqN37TFvNnEeyAa2tnVDnScQjWXN9ZaLy8G0rqjTBKMyrDle7PFj3DpHaphSaGvMbhIY09aVVlsjrFBuSKcvIKTTFw4F9P91lFFHCUivrTGapVwZOn111FEC0mlrpEHc6PTF8ZEPP7nxpVlThwmG1ekLpeduZu0goXT6quw9Uo6HemOc1xAixbsJ0pWFcqxRO33x3xIfTnNxOn0tJjp9Kc5D2kZFfuv/ExjXeTuzX2Nz61JqjovTvHYsPZ2+um3GZ5thlW27pzt9qYQHyq8ntYU4YFr/ACZxfL6iNSmvAAAAAElFTkSuQmCC" alt="hamburgerIcon"> 
+        <!-- Close button icon -->
+        <img id="close-button" class="mobile-nav__menu-icon mobile-nav__menu-icon--open" src="data:image/png;base64,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" alt="closeMenuIcon">
+    </div>
+    <br /> <br /> <br /> 
+    <div class="mobile-nav__list" id="mobile-menu">
+        <div class="main animation">  
+            <div class="shopping block"> 
+                <h1 class="go-shopping-text"> Go shopping <span><img class="block arrow-icon" src="https://www.pngkit.com/png/full/15-151462_feather-arrows-arrow-right-arrow-symbol-transparent-background.png" alt="arrow"></span></h1>
+            </div>
+            <hr> 
+            <div class="bigger-search-tab box" id="box"> 
+            <!-- <div class="hidden" id="box">  -->
+            <div class="search-tab">
+                <div class="find-store"> 
+                <p class="search-text"><img class="block search-icon" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="search icon"> Find online store</p>
+                </div>  
+                    <div class="vertical-menu block">
+                        <a class="link" href="#">ikea.us</a>
+                        <a class="link" href="#">ikea.ca (English)</a>
+                        <a class="link" href="#">ikea.ca (Fraicais)</a>
+                        <a class="link" href="#">ikea.mx (Espanol)</a>
+                    </div>
+            </div>
+            </div>
+            <div class="search-button">
+                <button onclick="rotateImageClockWise()" class="block locate-button">Locate online store: <b>ikea.us</b>
+                <a href="#"><img class="block caret rotate" id="caretRotate" src="caret.png" alt="caret"> </button></a>
+            </div> 
+        </div> 
+        <div class="hover-text"> 
+            <div class="links"> 
+                <a href="#" class="hover-underline-animation tab hover-text-content">Cookie information</a>
+                <a href="#" class="hover-underline-animation tab hover-text-content">Privacy statement</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+    <div class="wall-of-text">
+    <div> 
+        <h1><a href="https://www.ikea.com/" target="_blank">IKEA</a> <br> Microinteraction Enhancement: Final</h1>
+        <h2>FINAL - INFORMATION</h2>
+<!-- TRIGGERS -->
+        <h3>Triggers</h3>
+            <ul> 
+                <p><b class="title">Microinteraction 1</b></p>
+                <li> Hover over, off the Hamburger menu button</li>
+                <p><b class="title">Microinteraction 2</b></p>
+                <li> Click on the Hamburger menu button</li>
+                <p><b class="title">Microinteraction 3</b></p>
+                <li> Hover over, off on the &lsquo;Online store: ikea.us&rsquo; button</li>
+                <p><b class="title">Microinteraction 4</b></p>
+                <li> Click on the &lsquo;Online store: ikea.us&rsquo; button</li>
+                <p><b class="title">Microinteraction 5</b></p>
+                <li>Hover over and off the &lsquo;Go shopping&lsquo; button </li>
+                <p><b class="title">Microinteraction 6</b></p>
+                <li>Hover over and off links below &lsquo;Other IKEA sites&lsquo;  </li>
+                
+            </ul>
+
+<!-- RULES -->
+        <h3>Rules</h3>
+        <p><b class="title">Microinteraction 1</b></p>
+        <ul class="list">
+            <li>The cursor changes into a pointer</li>
+        </ul>
+        <p><b class="title">Microinteraction 2</b></p>
+        <ul class="list">
+            <li>The hamburger menu page slides from the right to left</li>
+        </ul>
+
+        <p><b class="title">Microinteraction 3 </b></p>
+        <p class="italic"> 1. Hover over</p>
+            <ul class="list">
+                <li>The cursor changes into a pointer </li>
+                <li>When the mouse hovers over the &apos;Online store: ikea.us&apos; button, its background fades into a light yellow.  </li>
+                </ul>
+            <br> 
+        <p class="italic"> 2. Hover off</p>
+            <ul class="list"> 
+                <li>When hovering off, the button&apos;s background changes back to yellow. </li>
+            </ul>
+
+        <p><b class="title">Microinteraction 4 </b></p>
+            <ul class="list"> 
+                <li>When being clicked, the caret on the &lsquo;Online store: ikea.us&rsquo; button turns upside down. </li>
+                <li>The &apos;Find online store&apos; search tool appears, above the &apos;Locate Online store: Ikea.us&apos; button. </li>
+            </ul> 
+        
+        <p><b class="title">Microinteraction 5</b></p>
+        <p class="italic"> 1. Hover over</p>
+            <ul class="list">
+                <li>The cursor changes into a pointer  </li>
+                <li>When the mouse hovers over the &apos;Go shopping&apos; button, the arrow icon next to the text floats to the right </li>
+                </ul>
+            <br> 
+        <p class="italic"> 2. Hover off</p>
+            <ul class="list"> 
+                <li>When hovering off, the arrow icon next to the &apos;Go shopping&apos; button floats to the left, back to the original position </li>
+            </ul>
+
+        <p><b class="title">Microinteraction 6</b></p>
+        <p class="italic"> 1. Hover over </p>
+        <ul>
+            <li>The cursor changes into a pointer  </li>
+            <li>A black underline is drawn underneath the menu tab name.</li>
+        </ul>
+        <p class="italic"> 2. Hover off </p>
+        <ul>
+            <li> When the mouse leaves the tab and stops hovering, the underline disappears. </li>
+        </ul>
+
+<!-- FEEDBACK -->
+        <h3>Feedback</h3>
+        <p><b class="title">Microinteraction 1</b></p>
+        <ul class="list">
+            <li>The cursor changes into a pointer</li>
+        </ul>
+        <p><b class="title">Microinteraction 2</b></p>
+        <ul class="list">
+            <li>The hamburger menu page slides from the right to left</li>
+        </ul>
+
+        <p><b class="title">Microinteraction 3 </b></p>
+        <p class="italic"> 1. Hover over</p>
+            <ul class="list">
+                <li>The cursor changes into a pointer </li>
+                <li>When the mouse hovers over the &apos;Online store: ikea.us&apos; button, its background fades into a light yellow.  </li>
+                </ul>
+            <br> 
+        <p class="italic"> 2. Hover off</p>
+            <ul class="list"> 
+                <li>When hovering off, the button&apos;s background changes back to yellow. </li>
+            </ul>
+
+        <p><b class="title">Microinteraction 4 </b></p>
+            <ul class="list"> 
+                <li>When being clicked, the caret on the &lsquo;Online store: ikea.us&rsquo; button turns upside down. </li>
+                <li>The &apos;Find online store&apos; search tool appears, above the &apos;Locate Online store: Ikea.us&apos; button. </li>
+            </ul> 
+        
+        <p><b class="title">Microinteraction 5</b></p>
+        <p class="italic"> 1. Hover over</p>
+            <ul class="list">
+                <li>The cursor changes into a pointer  </li>
+                <li>When the mouse hovers over the &apos;Go shopping&apos; button, the arrow icon next to the text floats to the right </li>
+                </ul>
+            <br> 
+        <p class="italic"> 2. Hover off</p>
+            <ul class="list"> 
+                <li>When hovering off, the arrow icon next to the &apos;Go shopping&apos; button floats to the left, back to the original position </li>
+            </ul>
+
+        <p><b class="title">Microinteraction 6</b></p>
+        <p class="italic"> 1. Hover over </p>
+        <ul>
+            <li>The cursor changes into a pointer  </li>
+            <li>A black underline is drawn underneath the menu tab name.</li>
+        </ul>
+        <p class="italic"> 2. Hover off </p>
+        <ul>
+            <li> When the mouse leaves the tab and stops hovering, the underline disappears. </li>
+        </ul>
+
+
+<!-- LOOPS AND MODES -->
+        <h3>Loops and Modes</h3>
+        <p class="italic"> Loops</p>
+            <ul> 
+                <li>None</li>
+            </ul>
+        <p class="italic"> Modes</p>
+        <p><b class="title">Microinteraction 1</b></p>
+            <ul> 
+                <li>None</li>
+            </ul>
+        <p><b class="title">Microinteraction 2</b></p>
+        <ul> 
+            <li>The hamburger menu appears from the side with other contents.</li>
+        </ul>
+        <p><b class="title">Microinteraction 3</b></p>
+            <ul> 
+                <li>None</li>
+            </ul>
+        <p><b class="title">Microinteraction 4</b></p>
+            <ul> 
+                <li>The &apos;Find online store&apos; search tool appears when user clicks onto the button.  </li>
+            </ul>
+        <p><b class="title">Microinteraction 5</b></p>
+            <ul> 
+                <li>None</li>
+            </ul>
+        <p><b class="title">Microinteraction 6</b></p>
+            <ul> 
+                <li>None</li>
+            </ul>
+    </div>
+</div> 
+    <script src="final.js"> </script>
+    <script src="menuMobile.js"></script>
+    <script src="menuTablet.js"></script>
+</body>
+</html>

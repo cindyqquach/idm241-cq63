@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="final.css">
-    <title>IDM241 - Final</title>
+    <title>IDM241 - Final Build</title>
 </head>
 <body>
+    <div class="main">  
+        <div class="shopping block"> 
+            <h1 class="go-shopping-text"> Go shopping <span><img class="block arrow-icon" src="https://www.pngkit.com/png/full/15-151462_feather-arrows-arrow-right-arrow-symbol-transparent-background.png" alt="arrow"></span></h1>
+        </div>
+        <hr> 
+        <div class="bigger-search-tab box" id="box"> 
+        <div class="search-tab">
+            <div class="find-store"> 
+            <p class="search-text"><img class="block search-icon" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="search icon"> Find online store</p>
+            </div>  
+                <div class="vertical-menu block">
+                    <a href="#">ikea.us</a>
+                    <a href="#">ikea.ca (English)</a>
+                    <a href="#">ikea.ca (Fraicais)</a>
+                    <a href="#">ikea.mx (Espanol)</a>
+                </div>
+        </div>
+        </div>
+        
+        <div class="search-button">
+            <button class="block locate-button">Locate online store: <b>ikea.us</b>
+            <img class="block caret" id="rotate-div" src="caret.png" alt="caret"> </button>
+        </div> 
+    </div> 
+    
     <div> 
         <h1><a href="https://www.ikea.com/" target="_blank">IKEA</a> <br> Microinteraction Enhancement: Final</h1>
         <h2>FINAL - INFORMATION</h2>
@@ -15,12 +40,16 @@
         <h3>Triggers</h3>
             <ul> 
                 <p><b>Microinteraction 1</b></p>
+                <li> Hover over, off the Hamburger menu button</li>
+                <p><b>Microinteraction 2</b></p>
                 <li> Click on the Hamburger menu button</li>
-                <p><b>Microinteraction 2 and 3</b></p>
-                <li> Hover over, off and click on the &lsquo;Online store: ikea.us&rsquo; button</li>
+                <p><b>Microinteraction 3</b></p>
+                <li> Hover over, off on the &lsquo;Online store: ikea.us&rsquo; button</li>
                 <p><b>Microinteraction 4</b></p>
-                <li>Hover over and off the &lsquo;Go shopping&lsquo; button </li>
+                <li> Click on the &lsquo;Online store: ikea.us&rsquo; button</li>
                 <p><b>Microinteraction 5</b></p>
+                <li>Hover over and off the &lsquo;Go shopping&lsquo; button </li>
+                <p><b>Microinteraction 6</b></p>
                 <li>Hover over and off links below &lsquo;Other IKEA sites&lsquo;  </li>
                 
             </ul>
@@ -29,31 +58,33 @@
         <h3>Rules</h3>
         <p><b>Microinteraction 1</b></p>
         <ul class="list">
+            <li>The cursor changes into a pointer</li>
+        </ul>
+        <p><b>Microinteraction 2</b></p>
+        <ul class="list">
             <li>The hamburger menu page slides from the right to left, expanding to cover the entire page.</li>
         </ul>
 
-        <p><b>Microinteraction 2 and 3</b></p>
+        <p><b>Microinteraction 3 </b></p>
         <p class="italic"> 1. Hover over</p>
             <ul class="list">
                 <li>The cursor changes into a pointer  </li>
                 <li>When the mouse hovers over the &apos;Online store: ikea.us&apos; button, its background fades into a light yellow.  </li>
                 </ul>
             <br> 
-        <p class="italic"> 2. When clicked</p> 
-            <ul class="list"> 
-                <li>When clicked, the caret turns upside down and the button moves downward, making room for the &apos;Find online store&apos; search tool. 
-                </li>
-                <li>The &apos;Find online store&apos; search tool moves up from the bottom, underneath the &apos;Online store: Ikea.us&apos; button. </li>
-                <li> The text &apos;Go shopping&apos; moves from the middle up to the top of the box. </li>
-            </ul> 
-        
-        
-        <p class="italic"> 3. Hover off</p>
+        <p class="italic"> 2. Hover off</p>
             <ul class="list"> 
                 <li>When hovering off, the button&apos;s background changes back to yellow. </li>
             </ul>
 
-        <p><b>Microinteraction 4</b></p>
+        <p><b>Microinteraction 4 </b></p>
+            <ul class="list"> 
+                <li>When being clicked, the caret on the &lsquo;Online store: ikea.us&rsquo; button turns upside down and the button moves downward, making room for the &apos;Find online store&apos; search tool. </li>
+                <li>The &apos;Find online store&apos; search tool moves up from the bottom, underneath the &apos;Online store: Ikea.us&apos; button. </li>
+                <li> The text &apos;Go shopping&apos; moves from the middle up to the top of the box. </li>
+            </ul> 
+        
+        <p><b>Microinteraction 5</b></p>
         <p class="italic"> 1. Hover over</p>
             <ul class="list">
                 <li>The cursor changes into a pointer  </li>
@@ -65,7 +96,7 @@
                 <li>When hovering off, the arrow icon next to the &apos;Go shopping&apos; button floats to the left, back to the original position </li>
             </ul>
 
-        <p><b>Microinteraction 5</b></p>
+        <p><b>Microinteraction 6</b></p>
         <p class="italic"> 1. Hover over </p>
         <ul>
             <li>The cursor changes into a pointer  </li>
@@ -80,29 +111,33 @@
         <h3>Feedback</h3>
         <p><b>Microinteraction 1</b></p>
         <ul class="list">
+            <li>The cursor changes into a pointer</li>
+        </ul>
+        <p><b>Microinteraction 2</b></p>
+        <ul class="list">
             <li>The hamburger menu page slides from the right to left, expanding to cover the entire page.</li>
         </ul>
 
-        <p><b>Microinteraction 2 and 3</b></p>
+        <p><b>Microinteraction 3 </b></p>
         <p class="italic"> 1. Hover over</p>
             <ul class="list">
                 <li>The cursor changes into a pointer  </li>
                 <li>When the mouse hovers over the &apos;Online store: ikea.us&apos; button, its background fades into a light yellow.  </li>
                 </ul>
             <br> 
-        <p class="italic"> 2. When clicked</p> 
-            <ul class="list"> 
-                <li>When clicked, the caret turns upside down and the button moves downward, making room for the &apos;Find online store&apos; search tool. 
-                </li>
-                <li>The &apos;Find online store&apos; search tool moves up from the bottom, underneath the &apos;Online store: Ikea.us&apos; button. </li>
-                <li> The text &apos;Go shopping&apos; moves from the middle up to the top of the box. </li>
-            </ul> 
-        <p class="italic"> 3. Hover off</p>
+        <p class="italic"> 2. Hover off</p>
             <ul class="list"> 
                 <li>When hovering off, the button&apos;s background changes back to yellow. </li>
             </ul>
 
-        <p><b>Microinteraction 4</b></p>
+        <p><b>Microinteraction 4 </b></p>
+            <ul class="list"> 
+                <li>When being clicked, the caret on the &lsquo;Online store: ikea.us&rsquo; button turns upside down and the button moves downward, making room for the &apos;Find online store&apos; search tool. </li>
+                <li>The &apos;Find online store&apos; search tool moves up from the bottom, underneath the &apos;Online store: Ikea.us&apos; button. </li>
+                <li> The text &apos;Go shopping&apos; moves from the middle up to the top of the box. </li>
+            </ul> 
+        
+        <p><b>Microinteraction 5</b></p>
         <p class="italic"> 1. Hover over</p>
             <ul class="list">
                 <li>The cursor changes into a pointer  </li>
@@ -114,7 +149,7 @@
                 <li>When hovering off, the arrow icon next to the &apos;Go shopping&apos; button floats to the left, back to the original position </li>
             </ul>
 
-        <p><b>Microinteraction 5</b></p>
+        <p><b>Microinteraction 6</b></p>
         <p class="italic"> 1. Hover over </p>
         <ul>
             <li>The cursor changes into a pointer  </li>
@@ -125,6 +160,7 @@
             <li> When the mouse leaves the tab and stops hovering, the underline disappears. </li>
         </ul>
 
+
 <!-- LOOPS AND MODES -->
         <h3>Loops and Modes</h3>
         <p class="italic"> Loops</p>
@@ -134,17 +170,25 @@
         <p class="italic"> Modes</p>
         <p><b>Microinteraction 1</b></p>
             <ul> 
-                <li>The hamburger menu appears from the side with other contents.</li>
+                <li>None</li>
             </ul>
-        <p><b>Microinteraction 2 and 3</b></p>
-            <ul> 
-                <li>the &apos;Find online store&apos; search tool appears when user clicks onto the button.  </li>
-            </ul>
-        <p><b>Microinteraction 4</b></p>
+        <p><b>Microinteraction 2</b></p>
+        <ul> 
+            <li>The hamburger menu appears from the side with other contents.</li>
+        </ul>
+        <p><b>Microinteraction 3</b></p>
             <ul> 
                 <li>None</li>
             </ul>
+        <p><b>Microinteraction 4</b></p>
+            <ul> 
+                <li>The &apos;Find online store&apos; search tool appears when user clicks onto the button.  </li>
+            </ul>
         <p><b>Microinteraction 5</b></p>
+            <ul> 
+                <li>None</li>
+            </ul>
+        <p><b>Microinteraction 6</b></p>
             <ul> 
                 <li>None</li>
             </ul>
@@ -153,20 +197,42 @@
     <div class="howitoworks"> 
         <h2>FINAL - HOW IT WORKS</h2>
         <div class="photos"> 
-            <img src="hamburgermenu.png" alt="Hamburger menu when hover"> 
-            <p class="subtitle"> Mouse hovers on the Hamburger menu</p>
-            <img src="opensidemenu.png" alt="hamburger menu slides out"> 
-            <p class="subtitle"> A side Hamburger menu slides from the right</p>
-            <img src="hoverbutton.png" alt="button when hover"> 
-            <p class="subtitle"> Mouse hovers on 'Online store: ikea.us' button </p>
-            <img src="hoverarrow.png" alt="button when hover on Go Shopping"> 
-            <p class="subtitle"> After clicking on the button, the tab expands to reveal Find online store scrolling menu. </p>
-            <p class="subtitle"> Mouse hover on 'Go Shopping' </p>
-            <img src="hoverlink.png" alt="link when hover"> 
-            <p class="subtitle"> Mouse hovers on link below 'Other Ikea sites'</p>
-            <img src="hoverlinkoff.png" alt="link when hover off"> 
-            <p class="subtitle"> Mouse hovers off link</p>
-            
+            <div class="box"> 
+                <img src="hamburgermenu_unhover.png" alt="Hamburger menu when not hovered"> 
+                <p class="subtitle"> Mouse hovers off the Hamburger menu</p>
+            </div>
+            <div class="box"> 
+                <img src="hamburgermenu_hover.png" alt="Hamburger menu when hover"> 
+                <p class="subtitle"> Mouse hovers over the Hamburger menu</p>
+            </div>
+            <div class="box"> 
+                <img src="opensidemenu.png" alt="hamburger menu slides out"> 
+                <p class="subtitle"> A side Hamburger menu slides from the right</p>
+            </div>
+            <div class="box"> 
+                <img src="hoverbutton.png" alt="button when being hovered"> 
+                <p class="subtitle"> Mouse hovers over 'Online store: ikea.us' button </p>
+            </div>
+            <div class="box"> 
+                <img src="clickbutton.png" alt="button when being clicked on"> 
+                <p class="subtitle"> After clicking on the 'Online store: ikea.us' button, the tab expands to reveal 'Find online store' scrolling menu. </p>
+            </div>
+            <div class="box"> 
+                <img src="unhoverarrow.png" alt="mouse hover off Go Shopping text">
+                <p class="subtitle"> Mouse hovers off 'Go Shopping' </p>
+            </div>
+            <div class="box"> 
+                <img src="hoverarrow.png" alt="mouse hover on Go Shopping text">
+                <p class="subtitle"> Mouse hovers over 'Go Shopping' </p>
+            </div>
+            <div class="box"> 
+                <img src="unhoverlink.png" alt="link when hover off"> 
+                <p class="subtitle"> Mouse hovers off link below 'Other Ikea sites'</p>
+            </div>
+            <div class="box">
+                <img src="hoverlink.png" alt="link when hover"> 
+                <p class="subtitle"> Mouse hovers over link</p>
+            </div>
         </div>
     </div>
     
