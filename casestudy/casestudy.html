@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM241 - Case study</title>
+</head>
+<body>
+    <h1>Cindy Quach</h1>
+    <p>IDM-241-002 - FA 22-23</p>
+    <div class="hero-image"> 
+        <img src="heroimage.png" alt="hero image"> 
+    </div> 
+    <div class="overview"> 
+        <h1> The Overview </h1>
+        <p>This is the final project for the IDM241 Microinteraction class. For this project, I was assigned to analyze and code a set of at minimum 5 micro-interactions. The project aims to teach us effectively using coding knowledge from all coding languages (HTML, CSS, Javascript, etc.) we&#39;ve already learned throughout the IDM coursework to recreate a sample of micro-interaction we see in real-life websites. 
+        <br /> For this project, I challenged myself with micro-interactions from the IKEA website. It&#39;s a challenge of mine as a designer who recently dabbled into coding to build this project from scratch. 
+            My goal for this exercise is to completely and effectively recreate this set of micro-interaction where users can seamlessly interact with it.
+        </p> 
+    </div>
+    <div class="process-insight"> 
+        <h1> Process and Insight </h1>
+            <h2> Research</h2>
+                <p>I started by researching a set of micro-interaction that fit the scope of this assignment. I chose the IKEA website, specifically its hamburger menu button micro-interaction. </p> 
+                <br /> 
+            <h2> Analysis</h2>
+                <p>There are 6 micro-interactions in my set of micro-interactions. They all consist of hovering over and off or clicking a button. After viewing these micro-interactions, I wrote down an analysis of their Triggers, Rules, Feedback, Loops, and Modes. </p>
+                <br /> 
+            <h2> Code</h2>
+                <p>Next, I continue by setting up an HTML file of the micro-interaction. I write down all its content in this file and put all these elements in their correct syntax. Using CSS, I style these elements into a visual interface close to how it is on the IKEA website.</p>
+                <h3>Micro-interaction 1: Hover over/off the Hamburger menu</h3>
+                <h3>Micro-interaction 2: Click on the Hamburger menu </h3>
+                    <p>This micro-interaction with the Hamburger menu heavily focuses on the click-on interaction. As the user clicks on the Hamburger menu, a menu slides from right to left, revealing more content. To create this animation, I need to use an HTML id to specify which tag I&#39;m targeting, then link these ids into a variable to manipulate in Javascript freely. </p>
+                    <img src="micro1.png" alt="html of microinteraction 1"> 
+                    <p class="subtitle">HTML of Microinteraction 1</p>
+                    <img src="micro2.png" alt="html of microinteraction 2"> 
+                    <p class="subtitle">HTML of Microinteraction 2</p>
+                    <p>To animate a slide in and out for this Hamburger menu, I used CSS @keyframes to create an animation sequence. </p>
+                    <img src="micro1-js.png" alt="js of microinteraction 2"> 
+                    <p class="subtitle">Javascript of Micro-interaction 1 and 2 </p>
+                <h3>Micro-interaction 3: Hover over, off on the &#39;Online store: ikea.us&#39; button</h3>
+                <h3>Micro-interaction 4: Click on the &#39;Online store: ikea.us&#39; button</h3>
+                    <p>Microinteraction 3 can also be done in CSS with the :hover selector. In microinteraction 4, there are two things happening when a user clicks onto the button. When clicked, the button will trigger to reveal a vertical scrollbar and trigger its caret to rotate 180 degrees. </p>
+                    <br /> 
+                    <p>In order to create an onclick button and reveal the content box animation, I first create id for two elements, the box and the button. </p>
+                    <img src="micro1.png" alt="microinteraction3"> 
+                    <p>Then to control the display on or off of the box, I&#39;ll use CSS to clarify its state. </p>
+                    <img src="micro3-css.png" alt="microinteraction3 css"> 
+                    <p>Using Javascript, I first pull all the elements needed for this interaction by the getElementById() method, then link them to a variable using const. Then I create a condition nested click function that triggers an action whenever the button is clicked. In this case, when no content is revealed, the content will appear if the button is triggered. And vice versa, when there&#39;s content, if the button is triggered, content will disappear.  </p>
+                    <img src="micro3-js.png" alt="microinteraction3 js"> 
+                    <p>The same principle applies to rotating the caret when a button is clicked. I&#39;ll create a unique id for both the button and the caret. In this micro-interaction, I will use the onclick event tag in HTML to link this button to a Javascript function called rotateImageClockWise(). </p>
+                    <img src="locate-store.png" alt="microinteraction3 js"> 
+                    <p>In the Javascript file, I&#39;ll create a function rotateImageClockWise() where I use the getElementById() method to link the caret to a variable using var. Then, to easily rotate this caret 180 degrees, I&#39;ll use a DOM style property to turn the icon. </p>
+                    <img src="rotate.png" alt="microinteraction4 js"> 
+                <h3>Micro-interaction 5: Hover over and off the &#39;Go shopping&#39; button </h3>
+                    <p>Microinteraction 5 is easily done in CSS with the :hover selector with transform tag and translateX value for moving animation of the arrow icon along the X axis. </p>
+                    <img src="goshopping.png" alt="microinteraction5 js"> 
+                <h3>Microinteraction 6: Hover over and off links below &#39;Other IKEA sites&#39; </h3>
+                    <p>Microinteraction 6 is a hover and underline animation with transition on the underline. When a cursor hovers over a text, the cursor changes into a pointer and a black underline is drawn from left to right. When the cursor hovers off, the underline runs from left to right until disappearing. This animation is achieved using CSS :hover selector and :after pseudo-element. </p>
+                    <img src="micro6.png" alt="microinteraction4 js"> 
+        <h1> The Solution </h1>    
+        <p> This is the outcome of my project. <br />
+            https://cindyqquach.com/idm241/final/build/ <br />
+            After multiple iterations and debugging sessions with the professor, I finally came to the final product. The set of micro-interaction sufficiently carries out all the intended functions and animations. 
+        </p>    
+        <h1> The Results </h1>  
+        <p> As the code functions well, this outcome suffices my vision of this project. My takeaway is the importance of seeking help whenever I&#39;m stuck, whether from the professor or online coding platforms. These two outlets play a big part in helping me finish this project. Over three weeks, I&#39;ve created these 6 micro-interactions from scratch. My goal is met. As we advance, a responsive &#39;Go shopping&#39; tab and closed tab onload are two improvements that can be done to this project.  </p>  
+    </div>
+</body>
+</html>
